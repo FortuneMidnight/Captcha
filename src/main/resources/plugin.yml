@@ -1,0 +1,14 @@
+name: Captcha
+version: '${project.version}'
+main: de.fortunemidnight.captcha.Captcha
+api-version: 1.19
+prefix: Captcha
+authors: [ FortuneMidnight ]
+description: A Captcha in Minecraft.
+website: fortunemidnight.de
+commands:
+  captcha:
+    description: Opens the Captcha.
+  captchatest:
+
+
