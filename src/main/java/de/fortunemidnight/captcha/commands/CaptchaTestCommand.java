@@ -17,6 +17,10 @@ public class CaptchaTestCommand implements CommandExecutor {
   @Override
   public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
     Player player = (Player) sender;
+    ByteArrayDataOutput out = ByteStreams.newDataOutput();
+    out.writeUTF("Connect");
+    out.writeUTF("hub");
+    player.sendPluginMessage(Captcha.getInstance(), "BungeeCord", out.toByteArray());
     return true;
   }
 }
